@@ -9,14 +9,14 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-const port =  3001;
+const port =  process.env.PORT || 3001;
 
 app.use(bodyParser.json())
 app.use(logger('dev'));
 
 
 // Create Database Connection
-const conn = mysql.createConnection({
+var conn = mysql.createConnection({
     host:"bmrrzuuas1qtarn74jhh-mysql.services.clever-cloud.com",
     user:"umtotl5ua1udagu7",
 	
