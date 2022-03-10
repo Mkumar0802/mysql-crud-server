@@ -17,11 +17,16 @@ app.use(logger('dev'));
 
 // Create Database Connection
 const conn = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"muthu@123",
-    database: "mydb"
+    host:"bmrrzuuas1qtarn74jhh-mysql.services.clever-cloud.com",
+    user:"umtotl5ua1udagu7",
+    password:"6riZu47KftIKYLsaoD6V",
+    database: "bmrrzuuas1qtarn74jhh"
 });
+
+
+
+
+
 
 // connect to database
 conn.connect((err) => {
