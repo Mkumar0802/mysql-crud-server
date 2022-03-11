@@ -17,11 +17,11 @@ app.use(logger('dev'));
 
 // Create Database Connection
 var conn = mysql.createConnection({
-    host:"bmrrzuuas1qtarn74jhh-mysql.services.clever-cloud.com",
-    user:"umtotl5ua1udagu7",
+    host:"35.238.149.182",
+    user:"root",
 	
-    password:"6riZu47KftIKYLsaoD6V",
-    database: "bmrrzuuas1qtarn74jhh"
+    password:"muthu1234",
+    database: "testDB"
 });
 
 
