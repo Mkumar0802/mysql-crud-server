@@ -19,7 +19,6 @@ app.use(logger('dev'));
 var conn = mysql.createConnection({
     host:"35.238.149.182",
     user:"root",
-	
     password:"muthu1234",
     database: "testDB"
 });
