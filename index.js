@@ -15,12 +15,13 @@ app.use(bodyParser.json())
 app.use(logger('dev'));
 
 
-// Create Database Connection
+//Create Database Connection
 var conn = mysql.createConnection({
-    host:"35.238.149.182",
-    user:"root",
-    password:"muthu1234",
-    database: "testDB"
+    host:"bmrrzuuas1qtarn74jhh-mysql.services.clever-cloud.com",
+    user:"umtotl5ua1udagu7",
+	
+    password:"6riZu47KftIKYLsaoD6V",
+    database: "bmrrzuuas1qtarn74jhh"
 });
 
 
