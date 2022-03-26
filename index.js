@@ -16,16 +16,23 @@ app.use(logger('dev'));
 
 
 //Create Database Connection
-var conn = mysql.createConnection({
-    host:"bmrrzuuas1qtarn74jhh-mysql.services.clever-cloud.com",
-    user:"umtotl5ua1udagu7",
+// var conn = mysql.createConnection({
+//     host:"bmrrzuuas1qtarn74jhh-mysql.services.clever-cloud.com",
+//     user:"umtotl5ua1udagu7",
 	
-    password:"6riZu47KftIKYLsaoD6V",
-    database: "bmrrzuuas1qtarn74jhh"
+//     password:"6riZu47KftIKYLsaoD6V",
+//     database: "bmrrzuuas1qtarn74jhh"
+// });
+
+
+
+var conn = mysql.createConnection({
+    host:"localhost",
+    user:"root",
+    password:"muthu@123",
+    database: "accounts"
+	
 });
-
-
-
 
 
 
@@ -34,6 +41,15 @@ conn.connect((err) => {
 	if (err) throw err;
 	console.log("MySQL connected");
 });
+
+
+//Api running
+app.get('/', (req, res) => {
+	res.send('Api running')
+  })
+
+
+
 
 // creat a new Record
 app.post("/create", (req, res) => {
