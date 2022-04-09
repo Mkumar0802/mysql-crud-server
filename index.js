@@ -15,24 +15,24 @@ app.use(bodyParser.json())
 app.use(logger('dev'));
 
 
-//Create Database Connection
-// var conn = mysql.createConnection({
-//     host:"bmrrzuuas1qtarn74jhh-mysql.services.clever-cloud.com",
-//     user:"umtotl5ua1udagu7",
-	
-//     password:"6riZu47KftIKYLsaoD6V",
-//     database: "bmrrzuuas1qtarn74jhh"
-// });
-
-
-
+Create Database Connection
 var conn = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"muthu@123",
-    database: "accounts"
+    host:"ec2-23-20-224-166.compute-1.amazonaws.com",
+    user:"rjiccosmrszqsl",
 	
+    password:"e14f2bf48b31fd055f44d57b0bfa528ea31158fc6d843715e10cb5da0d76aec1",
+    database: "d6erabmen6886d"
 });
+
+
+
+// var conn = mysql.createConnection({
+//     host:"localhost",
+//     user:"root",
+//     password:"muthu@123",
+//     database: "accounts"
+	
+// });
 
 
 
